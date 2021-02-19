@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery eventos - mouse</title>
+	<!-- jquery -->
+	<script src="jquery-3.4.1.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function(){
+			//click
+			//dblclick
+			//mousedown
+			//mouseover
+			//mouseout
+			//somente alterar o tipo da funcao
+			$('#div1').dblclick( function(){
+
+				alert('Elemento foi clicado 2x');
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<div id="div1"style="height: 150px; width: 150px; background: #CCC;"></div>
+</body>
+</html>

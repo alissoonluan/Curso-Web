@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery eventos - teclado</title>
+	<!-- jquery -->
+	<script src="jquery-3.4.1.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function(){
+			//keydown
+			//keypress
+			//keyup			
+			//somente alterar o tipo da funcao
+			$('#campo1').keyup( function(){
+
+				alert('uma tecla foi apertada');
+			});
+
+			//eventos de formularios
+			//focus
+			//blur
+			//change
+			$('#campo1').focus( function(){
+
+				alert('O elemento foi focado');
+			});
+			/*$('#campo1').blur( function(){
+
+				alert('O elemento foi desfocado');
+			});*/
+
+			$('.seletor').change( function(){
+
+				alert('O elemento foi mudado');
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="campo1">
+	<select class="seletor">
+		<option value="1">Opcao 1</option>
+		<option value="2">Opcao 2</option>
+	</select>
+</body>
+</html>
